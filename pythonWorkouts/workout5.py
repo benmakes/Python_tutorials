@@ -6,6 +6,11 @@ def pig_latin(s):
             s = s[1::] + s[0] + 'ay'
     return s
 
-print(pig_latin('python'))
-print(pig_latin('onto'))
-print(pig_latin(''))
+def pl_sentence(sentence):
+    words = sentence.split()
+    pl_words = []
+    for word in words:
+        pl_words.append(pig_latin(word))
+    return ' '.join(pl_words)
+
+print(pl_sentence('This is a test'))
