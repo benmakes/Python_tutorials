@@ -9,5 +9,3 @@ def create_scoops(*args):
 
 create_scoops('vanilla', 'chocolate', True)
 
-new_scoop = Scoop()
-
